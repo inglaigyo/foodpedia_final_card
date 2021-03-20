@@ -123,7 +123,7 @@ export default function RecipeReviewCard() {
               buttonStyle="btn--primary--solid"
               buttonSize="btn--medium"
             >
-              ADD ITEM
+              Add Item
             </Button>
             <Button
               onClick={() => {
@@ -133,7 +133,7 @@ export default function RecipeReviewCard() {
               buttonStyle="btn--primary--solid"
               buttonSize="btn--medium"
             >
-              SHARE
+              Share
             </Button>
           </div>
         </CardContent>
