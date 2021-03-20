@@ -9,7 +9,6 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { Button } from "./button";
 import "./card.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -31,6 +30,34 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(180deg)"
   }
 }));
+
+const STYLES = ["btn--primary--solid"];
+
+const SIZES = ["btn--medium", "btn--large"];
+
+export const Button = ({
+  children,
+  type,
+  onClick,
+  buttonStyle,
+  buttonSize
+}) => {
+  const checkButtonStyle = STYLES.includes(buttonStyle)
+    ? buttonStyle
+    : STYLES[0];
+
+  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+
+  return (
+    <button
+      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      onClick={onClick}
+      type={type}
+    >
+      {children}
+    </button>
+  );
+};
 
 export default function RecipeReviewCard() {
   const classes = useStyles();
@@ -96,7 +123,7 @@ export default function RecipeReviewCard() {
               buttonStyle="btn--primary--solid"
               buttonSize="btn--medium"
             >
-              Add Item
+              ADD ITEM
             </Button>
             <Button
               onClick={() => {
@@ -106,7 +133,7 @@ export default function RecipeReviewCard() {
               buttonStyle="btn--primary--solid"
               buttonSize="btn--medium"
             >
-              Share
+              SHARE
             </Button>
           </div>
         </CardContent>

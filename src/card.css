@@ -30,7 +30,7 @@ ul {
 }
 
 :root {
-  --primary: #4628ff;
+  --primary: #0000ff;
   --white: #fdfdfd;
 }
 
@@ -46,7 +46,7 @@ ul {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .btn--primary--solid {
@@ -54,6 +54,10 @@ ul {
   color: var(--white);
   border: none;
   outline: none;
+}
+
+.btn--primary--solid:hover {
+  background-color: black;
 }
 
 .btn--medium {
