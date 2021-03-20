@@ -45,10 +45,6 @@ ul {
   margin-bottom: 5px;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-}
-
 .btn--primary--solid {
   background-color: var(--primary);
   color: var(--white);
@@ -58,6 +54,7 @@ ul {
 
 .btn--primary--solid:hover {
   background-color: black;
+  transform: translateY(-2px);
 }
 
 .btn--medium {
