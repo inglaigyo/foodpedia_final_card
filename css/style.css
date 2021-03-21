@@ -1,0 +1,16 @@
+
+h1{
+	font-family: cursive;
+	color: white;
+}
+
+.side{
+	color: red; text-decoration: none;
+}
+
+.skand {
+	width: 500px;
+	background: black;
+	text-align: center;
+	margin: auto;
+}
